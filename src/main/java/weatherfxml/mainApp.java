@@ -11,7 +11,7 @@ public class mainApp extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(mainApp.class.getResource("main_page.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 600, 800);
+        Scene scene = new Scene(fxmlLoader.load(), 1280, 720);
         stage.setTitle("WeatherFXML!");
         stage.setScene(scene);
         stage.show();

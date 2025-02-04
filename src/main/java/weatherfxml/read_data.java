@@ -56,13 +56,13 @@ public class read_data {
             JSONObject currentWeatherJSON = (JSONObject) jsonObject.get("current");
 
             double temp = (double) currentWeatherJSON.get("temperature_2m");
-            System.out.println("Current temp: " + temp);
+            System.out.println("Current temp: " + temp + "C");
 
             long relHumidity = (long) currentWeatherJSON.get("relative_humidity_2m");
-            System.out.println("Current rel_humidity: " + relHumidity);
+            System.out.println("Current rel_humidity: " + relHumidity + "%");
 
             double wind_speed = (double) currentWeatherJSON.get("wind_speed_10m");
-            System.out.println("Current wind_speed: " + wind_speed);
+            System.out.println("Current wind_speed: " + wind_speed + "m/s");
 
         }
         catch (Exception e) {
