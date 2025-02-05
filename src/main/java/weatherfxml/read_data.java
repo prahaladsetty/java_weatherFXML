@@ -1,3 +1,19 @@
+/*
+    file to parse .JSON file to get latitude + longitude
+    uses latitude + longitude to get weather data
+    displays weather data
+
+    functions:
+
+        main()
+
+        url_get()
+        parse_json()
+        get_location()
+        display_data()
+
+ */
+
 package weatherfxml;
 
 import org.json.simple.JSONArray;
@@ -7,13 +23,13 @@ import org.json.simple.parser.ParseException;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Scanner;
 
+// each function uses a try and catch method to make sure program doesn't stop when an error occurs.
 
 public class read_data {
-    public static void main(String[] args)
+    public static void main(String[] args) // calls functions
     {
         try {
             Scanner scanner = new Scanner(System.in);
@@ -23,13 +39,13 @@ public class read_data {
             city = scanner.nextLine();
 
             JSONObject cityLocationData = (JSONObject) getLocationData(city);
-            double latitude = (double) cityLocationData.get("latitude");
-            double longitude = (double) cityLocationData.get("longitude");
+            double latitude = (double) cityLocationData.get("latitude"); // calls function(s)
+            double longitude = (double) cityLocationData.get("longitude"); // calls function(s)
 
             System.out.println("lat: " + latitude);
             System.out.println("long: " + longitude);
 
-            displayWeatherData(latitude, longitude);
+            displayWeatherData(latitude, longitude); //parameters needed to access weather data
 
         }
         catch (Exception e) {
@@ -37,7 +53,7 @@ public class read_data {
         }
     }
 
-    private static void displayWeatherData(double latitude, double longitude) {
+    private static void displayWeatherData(double latitude, double longitude) { // prints data to user, variables are useful
         try {
             String url = "https://api.open-meteo.com/v1/forecast?latitude="
                     +latitude+"&longitude="+longitude+"&current=temperature_2m,relative_humidity_2m,wind_speed_10m";
@@ -55,13 +71,13 @@ public class read_data {
             JSONObject jsonObject = (JSONObject) parser.parse(jsonResponse);
             JSONObject currentWeatherJSON = (JSONObject) jsonObject.get("current");
 
-            double temp = (double) currentWeatherJSON.get("temperature_2m");
+            double temp = (double) currentWeatherJSON.get("temperature_2m"); //temp
             System.out.println("Current temp: " + temp + "C");
 
-            long relHumidity = (long) currentWeatherJSON.get("relative_humidity_2m");
+            long relHumidity = (long) currentWeatherJSON.get("relative_humidity_2m"); //humidity
             System.out.println("Current rel_humidity: " + relHumidity + "%");
 
-            double wind_speed = (double) currentWeatherJSON.get("wind_speed_10m");
+            double wind_speed = (double) currentWeatherJSON.get("wind_speed_10m"); //wind speed
             System.out.println("Current wind_speed: " + wind_speed + "m/s");
 
         }
@@ -71,7 +87,7 @@ public class read_data {
 
     }
 
-    private static Object getLocationData(String city) throws IOException {
+    private static Object getLocationData(String city) throws IOException { // gets long + lat
 
         city = city.replaceAll(" ", "+");
 
@@ -100,7 +116,7 @@ public class read_data {
     }
 }
 
-    private static String readApiResponse(HttpURLConnection apiConnection) {
+    private static String readApiResponse(HttpURLConnection apiConnection) { //parses .JSON file
 
         try {
             StringBuilder resultJson = new StringBuilder();
@@ -121,7 +137,7 @@ public class read_data {
         return null; //means an error occurred
     }
 
-    private static HttpURLConnection fetchApiResponse(String urlString) {
+    private static HttpURLConnection fetchApiResponse(String urlString) { // connects to the API .JSON file
 
         try{
             URL url = new URL(urlString);
