@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+
 <!-- <?import weatherfxml.read_data.* ?>; this will be used later when using variables. !-->
+
 <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #212738;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="705.0" minWidth="10.0" prefWidth="665.0" />
@@ -38,5 +41,93 @@
             <Insets left="-20.0" />
          </GridPane.margin>
       </Rectangle>
+      <Label alignment="TOP_CENTER" prefHeight="81.0" prefWidth="640.0" text="day" textFill="WHITE" GridPane.rowIndex="1">
+         <font>
+            <Font name="Arial" size="70.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets bottom="425.0" left="40.0" />
+         </GridPane.margin>
+      </Label>
+      <Label alignment="TOP_LEFT" prefHeight="81.0" prefWidth="640.0" text="temp" textFill="WHITE" GridPane.rowIndex="1">
+         <font>
+            <Font name="Arial" size="50.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets bottom="250.0" left="50.0" />
+         </GridPane.margin>
+      </Label>
+      <Label alignment="TOP_LEFT" prefHeight="81.0" prefWidth="640.0" text="humidity" textFill="WHITE" GridPane.rowIndex="1">
+         <font>
+            <Font name="Arial" size="50.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets bottom="75.0" left="50.0" />
+         </GridPane.margin>
+      </Label>
+      <Label alignment="TOP_LEFT" prefHeight="81.0" prefWidth="640.0" text="wind_speed" textFill="WHITE" GridPane.rowIndex="1">
+         <font>
+            <Font name="Arial" size="50.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets bottom="-100.0" left="50.0" />
+         </GridPane.margin>
+      </Label>
+      <Label alignment="TOP_LEFT" prefHeight="81.0" prefWidth="640.0" text="wind_speed" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <font>
+            <Font name="Arial" size="50.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets bottom="-100.0" />
+         </GridPane.margin>
+      </Label>
+      <Label alignment="TOP_LEFT" prefHeight="81.0" prefWidth="640.0" text="humidity" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <font>
+            <Font name="Arial" size="50.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets bottom="75.0" />
+         </GridPane.margin>
+      </Label>
+      <Label alignment="TOP_LEFT" prefHeight="81.0" prefWidth="640.0" text="temp" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <font>
+            <Font name="Arial" size="50.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets bottom="250.0" />
+         </GridPane.margin>
+      </Label>
+      <Label alignment="TOP_CENTER" prefHeight="81.0" prefWidth="640.0" text="day" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <font>
+            <Font name="Arial" size="70.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets bottom="425.0" left="-40.0" />
+         </GridPane.margin>
+      </Label>
    </children>
 </GridPane>
