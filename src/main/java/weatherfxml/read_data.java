@@ -24,6 +24,8 @@ import org.json.simple.parser.ParseException;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.Arrays;
+import java.util.Objects;
 import java.util.Scanner;
 
 // each function uses a try and catch method to make sure program doesn't stop when an error occurs.
@@ -91,7 +93,7 @@ public class read_data {
 
         city = city.replaceAll(" ", "+");
 
-        String urlString = "https://geocoding-api.open-meteo.com/v1/search?name="+city+"&count=1&language=en&format=json";
+        String urlString = "https://geocoding-api.open-meteo.com/v1/search?name="+city+"&count=10&language=en&format=json";
         try {
             HttpURLConnection apidonnection = fetchApiResponse(urlString);
 
@@ -106,7 +108,30 @@ public class read_data {
             JSONObject resultsJsonObj = (JSONObject) parser.parse(jsonResponse);
 
             JSONArray locationData = (JSONArray) resultsJsonObj.get("results");
-            return (JSONObject) locationData.get(0);
+
+            String[] strings = new String[5]; // initialize array
+
+            for (int i = 0; i < strings.length; i++ ) { // assign state name to each element in array
+                JSONObject locationID = (JSONObject) locationData.get(i);
+                locationID.get("admin1");
+                strings[i] = locationID.get("admin1").toString();
+            }
+
+            System.out.println(Arrays.toString(strings));
+
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("which specific " + city + " do you want the weather data for?"); // ask user which ID they want
+
+            String ID = scanner.nextLine();
+            int usableID = 0;
+            for (int i = 0; i < strings.length; i++) { // find which ID user wants
+                if (Objects.equals(strings[i], ID)) {
+                    usableID = i;
+                    break;
+                }
+            }
+
+            return (JSONObject) locationData.get(usableID); // gets the weather data for the ID user picks.
         } catch (IOException | ParseException e) {
             e.printStackTrace();
             
