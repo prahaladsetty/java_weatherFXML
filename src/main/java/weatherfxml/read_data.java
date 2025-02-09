@@ -33,21 +33,31 @@ import java.util.Scanner;
 public class read_data {
     public static void main(String[] args) // calls functions
     {
+        int i = 0;
         try {
-            Scanner scanner = new Scanner(System.in);
-            String city;
+            while (i < 10) {
+                Scanner scanner = new Scanner(System.in);
+                String city;
 
-            System.out.println("enter city: ");
-            city = scanner.nextLine();
+                System.out.println("enter city: ");
+                city = scanner.nextLine();
 
-            JSONObject cityLocationData = (JSONObject) getLocationData(city);
-            double latitude = (double) cityLocationData.get("latitude"); // calls function(s)
-            double longitude = (double) cityLocationData.get("longitude"); // calls function(s)
+                JSONObject cityLocationData = (JSONObject) getLocationData(city);
+                assert cityLocationData != null;
+                double latitude = (double) cityLocationData.get("latitude"); // calls function(s)
+                double longitude = (double) cityLocationData.get("longitude"); // calls function(s)
 
-            System.out.println("lat: " + latitude);
-            System.out.println("long: " + longitude);
+                System.out.println("lat: " + latitude);
+                System.out.println("long: " + longitude);
 
-            displayWeatherData(latitude, longitude); //parameters needed to access weather data
+                displayWeatherData(latitude, longitude); //parameters needed to access weather data
+
+                i++;
+
+            }
+            {
+
+            }
 
         }
         catch (Exception e) {

@@ -43,7 +43,7 @@
             <Insets left="-20.0" />
          </GridPane.margin>
       </Rectangle>
-      <Label id="day_1" alignment="TOP_CENTER" prefHeight="81.0" prefWidth="640.0" text="day" textFill="WHITE" GridPane.rowIndex="1">
+      <Label id="myLabel" fx:id="myLabel" alignment="TOP_CENTER" prefHeight="81.0" prefWidth="640.0" text="day" textFill="WHITE" GridPane.rowIndex="1">
          <font>
             <Font name="Arial" size="70.0" />
          </font>
@@ -131,5 +131,15 @@
             <Insets bottom="425.0" left="-40.0" />
          </GridPane.margin>
       </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#132f4a" height="112.0" stroke="TRANSPARENT" strokeType="INSIDE" width="577.0" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="-350.0" left="50.0" right="100.0" />
+         </GridPane.margin>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#132f4a" height="112.0" stroke="TRANSPARENT" strokeType="INSIDE" width="577.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="-350.0" left="-8.0" />
+         </GridPane.margin>
+      </Rectangle>
    </children>
 </GridPane>
