@@ -141,5 +141,21 @@
             <Insets bottom="-350.0" left="-8.0" />
          </GridPane.margin>
       </Rectangle>
+      <Label prefHeight="88.0" prefWidth="600.0" style="-fx-text-fill: ;" text="search" textAlignment="RIGHT" textFill="#ffffff81" GridPane.rowIndex="1">
+         <font>
+            <Font size="60.0" />
+         </font>
+         <GridPane.margin>
+            <Insets bottom="-350.0" left="50.0" />
+         </GridPane.margin>
+      </Label>
+      <Label prefHeight="88.0" prefWidth="600.0" style="-fx-text-fill: ;" text="search" textAlignment="RIGHT" textFill="#ffffff81" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <font>
+            <Font size="60.0" />
+         </font>
+         <GridPane.margin>
+            <Insets bottom="-350.0" />
+         </GridPane.margin>
+      </Label>
    </children>
 </GridPane>
