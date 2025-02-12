@@ -33,5 +33,9 @@ public class Controller {
         setLabelText(newText);
     }
 
+    public String keyGet(String key) {
+        return key;
+    } // not real function
+
 
 }
