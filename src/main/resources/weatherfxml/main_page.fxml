@@ -26,7 +26,7 @@
             <Font name="Arial Bold" size="80.0" />
          </font></Label>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#37425e" height="80.0" stroke="TRANSPARENT" strokeType="INSIDE" width="590.0" GridPane.columnIndex="1" />
-      <Label prefHeight="88.0" prefWidth="600.0" style="-fx-text-fill: ;" text="------------------------" textAlignment="RIGHT" textFill="#ffffff81" GridPane.columnIndex="1">
+      <Label prefHeight="88.0" prefWidth="600.0" style="-fx-text-fill: ;" text="credits: prahaladsetty" textFill="#ffffff81" textOverrun="CLIP" GridPane.columnIndex="1">
          <font>
             <Font size="60.0" />
          </font>
@@ -43,7 +43,7 @@
             <Insets left="-20.0" />
          </GridPane.margin>
       </Rectangle>
-      <Label id="myLabel" fx:id="myLabel" alignment="TOP_CENTER" prefHeight="81.0" prefWidth="640.0" text="day" textFill="WHITE" GridPane.rowIndex="1">
+      <Label id="myLabel" fx:id="myLabel" alignment="TOP_CENTER" prefHeight="81.0" prefWidth="640.0" text="city1" textFill="WHITE" GridPane.rowIndex="1">
          <font>
             <Font name="Arial" size="70.0" />
          </font>
@@ -54,7 +54,7 @@
             <Insets bottom="425.0" left="40.0" />
          </GridPane.margin>
       </Label>
-      <Label alignment="TOP_LEFT" prefHeight="81.0" prefWidth="640.0" text="temp" textFill="WHITE" GridPane.rowIndex="1">
+      <Label alignment="TOP_LEFT" prefHeight="81.0" prefWidth="640.0" text="temp1" textFill="WHITE" GridPane.rowIndex="1">
          <font>
             <Font name="Arial" size="50.0" />
          </font>
@@ -65,7 +65,7 @@
             <Insets bottom="250.0" left="50.0" />
          </GridPane.margin>
       </Label>
-      <Label alignment="TOP_LEFT" prefHeight="81.0" prefWidth="640.0" text="humidity" textFill="WHITE" GridPane.rowIndex="1">
+      <Label alignment="TOP_LEFT" prefHeight="81.0" prefWidth="640.0" text="humidity1" textFill="WHITE" GridPane.rowIndex="1">
          <font>
             <Font name="Arial" size="50.0" />
          </font>
@@ -76,7 +76,7 @@
             <Insets bottom="75.0" left="50.0" />
          </GridPane.margin>
       </Label>
-      <Label alignment="TOP_LEFT" prefHeight="81.0" prefWidth="640.0" text="wind_speed" textFill="WHITE" GridPane.rowIndex="1">
+      <Label alignment="TOP_LEFT" prefHeight="81.0" prefWidth="640.0" text="wind_speed1" textFill="WHITE" GridPane.rowIndex="1">
          <font>
             <Font name="Arial" size="50.0" />
          </font>
@@ -87,7 +87,7 @@
             <Insets bottom="-100.0" left="50.0" />
          </GridPane.margin>
       </Label>
-      <Label alignment="TOP_LEFT" prefHeight="81.0" prefWidth="640.0" text="wind_speed" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+      <Label alignment="TOP_LEFT" prefHeight="81.0" prefWidth="640.0" text="wind_speed2" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
          <font>
             <Font name="Arial" size="50.0" />
          </font>
@@ -98,7 +98,7 @@
             <Insets bottom="-100.0" />
          </GridPane.margin>
       </Label>
-      <Label alignment="TOP_LEFT" prefHeight="81.0" prefWidth="640.0" text="humidity" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+      <Label alignment="TOP_LEFT" prefHeight="81.0" prefWidth="640.0" text="humidity2" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
          <font>
             <Font name="Arial" size="50.0" />
          </font>
@@ -109,7 +109,7 @@
             <Insets bottom="75.0" />
          </GridPane.margin>
       </Label>
-      <Label alignment="TOP_LEFT" prefHeight="81.0" prefWidth="640.0" text="temp" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+      <Label alignment="TOP_LEFT" prefHeight="81.0" prefWidth="640.0" text="temp2" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
          <font>
             <Font name="Arial" size="50.0" />
          </font>
@@ -120,7 +120,7 @@
             <Insets bottom="250.0" />
          </GridPane.margin>
       </Label>
-      <Label alignment="TOP_CENTER" prefHeight="81.0" prefWidth="640.0" text="day" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+      <Label alignment="TOP_CENTER" prefHeight="81.0" prefWidth="640.0" text="city2" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
          <font>
             <Font name="Arial" size="70.0" />
          </font>
@@ -131,31 +131,21 @@
             <Insets bottom="425.0" left="-40.0" />
          </GridPane.margin>
       </Label>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#132f4a" height="112.0" stroke="TRANSPARENT" strokeType="INSIDE" width="577.0" GridPane.rowIndex="1">
+      <TextField maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="110.0" prefWidth="550.0" promptText="insert" style="-fx-background-color: #132f4a;" GridPane.rowIndex="1">
          <GridPane.margin>
             <Insets bottom="-350.0" left="50.0" right="100.0" />
          </GridPane.margin>
-      </Rectangle>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#132f4a" height="112.0" stroke="TRANSPARENT" strokeType="INSIDE" width="577.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
-         <GridPane.margin>
-            <Insets bottom="-350.0" left="-8.0" />
-         </GridPane.margin>
-      </Rectangle>
-      <Label prefHeight="88.0" prefWidth="600.0" style="-fx-text-fill: ;" text="search" textAlignment="RIGHT" textFill="#ffffff81" GridPane.rowIndex="1">
          <font>
-            <Font size="60.0" />
+            <Font name="System Bold" size="50.0" />
          </font>
-         <GridPane.margin>
-            <Insets bottom="-350.0" left="50.0" />
-         </GridPane.margin>
-      </Label>
-      <Label prefHeight="88.0" prefWidth="600.0" style="-fx-text-fill: ;" text="search" textAlignment="RIGHT" textFill="#ffffff81" GridPane.columnIndex="1" GridPane.rowIndex="1">
+      </TextField>
+      <TextField maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="110.0" prefWidth="550.0" promptText="insert" style="-fx-background-color: #132f4a;" GridPane.columnIndex="1" GridPane.rowIndex="1">
          <font>
-            <Font size="60.0" />
+            <Font name="System Bold" size="50.0" />
          </font>
          <GridPane.margin>
             <Insets bottom="-350.0" />
          </GridPane.margin>
-      </Label>
+      </TextField>
    </children>
 </GridPane>
