@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<!-- <?import weatherfxml.read_data.* ?>; this will be used later when using variables. !-->
 
-<?import weatherfxml.read_data.* ?>
-
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #212738;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #212738;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="weatherfxml.WeatherController">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="705.0" minWidth="10.0" prefWidth="665.0" />
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="635.0" minWidth="10.0" prefWidth="615.0" />
@@ -26,13 +22,11 @@
             <Font name="Arial Bold" size="80.0" />
          </font></Label>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#37425e" height="80.0" stroke="TRANSPARENT" strokeType="INSIDE" width="590.0" GridPane.columnIndex="1" />
-      <Label prefHeight="88.0" prefWidth="600.0" style="-fx-text-fill: ;" text="credits: prahaladsetty" textFill="#ffffff81" textOverrun="CLIP" GridPane.columnIndex="1">
+      <TextField prefHeight="86.0" prefWidth="400.0" style="-fx-background-color: #37425e;" text="city" GridPane.columnIndex="1">
          <font>
-            <Font size="60.0" />
+            <Font name="System Bold" size="40.0" />
          </font>
-         <padding>
-            <Insets left="400.0" />
-         </padding></Label>
+      </TextField>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#37425e" height="515.0" stroke="TRANSPARENT" strokeType="INSIDE" width="600.0" GridPane.rowIndex="1">
          <GridPane.margin>
             <Insets left="40.0" />
@@ -43,7 +37,7 @@
             <Insets left="-20.0" />
          </GridPane.margin>
       </Rectangle>
-      <Label id="myLabel" fx:id="myLabel" alignment="TOP_CENTER" prefHeight="81.0" prefWidth="640.0" text="city1" textFill="WHITE" GridPane.rowIndex="1">
+      <Label fx:id="city1" alignment="TOP_CENTER" prefHeight="81.0" prefWidth="640.0" text="city1" textFill="WHITE" GridPane.rowIndex="1">
          <font>
             <Font name="Arial" size="70.0" />
          </font>
@@ -54,7 +48,7 @@
             <Insets bottom="425.0" left="40.0" />
          </GridPane.margin>
       </Label>
-      <Label alignment="TOP_LEFT" prefHeight="81.0" prefWidth="640.0" text="temp1" textFill="WHITE" GridPane.rowIndex="1">
+      <Label fx:id="temp1" alignment="TOP_LEFT" prefHeight="81.0" prefWidth="640.0" text="temp1" textFill="WHITE" GridPane.rowIndex="1">
          <font>
             <Font name="Arial" size="50.0" />
          </font>
@@ -65,7 +59,7 @@
             <Insets bottom="250.0" left="50.0" />
          </GridPane.margin>
       </Label>
-      <Label alignment="TOP_LEFT" prefHeight="81.0" prefWidth="640.0" text="humidity1" textFill="WHITE" GridPane.rowIndex="1">
+      <Label fx:id="humidity1" alignment="TOP_LEFT" prefHeight="81.0" prefWidth="640.0" text="humidity1" textFill="WHITE" GridPane.rowIndex="1">
          <font>
             <Font name="Arial" size="50.0" />
          </font>
@@ -76,7 +70,7 @@
             <Insets bottom="75.0" left="50.0" />
          </GridPane.margin>
       </Label>
-      <Label alignment="TOP_LEFT" prefHeight="81.0" prefWidth="640.0" text="wind_speed1" textFill="WHITE" GridPane.rowIndex="1">
+      <Label fx:id="wind_speed1" alignment="TOP_LEFT" prefHeight="81.0" prefWidth="640.0" text="wind_speed1" textFill="WHITE" GridPane.rowIndex="1">
          <font>
             <Font name="Arial" size="50.0" />
          </font>

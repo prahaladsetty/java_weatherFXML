@@ -99,7 +99,7 @@ public class read_data {
 
     }
 
-    private static Object getLocationData(String city) throws IOException { // gets long + lat
+    static Object getLocationData(String city) throws IOException { // gets long + lat
 
         city = city.replaceAll(" ", "+");
 
